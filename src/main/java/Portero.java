@@ -6,22 +6,26 @@ public class Portero extends Futbolista {
 	public byte dorsal;
 	
 	public Portero(String nombre, int edad,short golesRecibidos,byte dorsal) {
-		super(nombre, edad, Portero);
+		super(nombre, edad, "Portero");
 		this.golesRecibidos = golesRecibidos;
 		this.dorsal = dorsal;
 	}
+	
 	@Override
 	public String toString() {
 		return super.toString()+" con el dorsal "+ dorsal + ". Le han marcado "+ golesRecibidos;
 	}
+	
 	@Override
 	public boolean jugarConLasManos() {
 		return true;
 	}
+	
 	@Override
 	public int compareTo(Object k) {
 		return 0;
 	}
+	
 	@Override
 	public int compareTo(Futbolista t) {
 		Portero p = (Portero) t;
