@@ -24,7 +24,7 @@ public class Portero extends Futbolista {
 	}
 	@Override
 	public int compareTo(Futbolista t) {
-		Portero p = (Portero) t
+		Portero p = (Portero) t;
 		return Math.abs(this.golesRecibidos - p.golesRecibidos);
 	}
 	
